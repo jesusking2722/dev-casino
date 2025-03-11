@@ -1,0 +1,81 @@
+import { FC } from "react";
+import { Icon } from "@iconify/react";
+
+interface ButtonProps {
+  type: "default" | "icon" | "primary" | "secondary";
+  label?: string;
+  icon?: string;
+  iconType?: "primary";
+  iconImg?: string;
+  disabled?: boolean;
+  loading?: boolean;
+  onClick?: () => void;
+}
+
+const Button: FC<ButtonProps> = ({
+  type,
+  label,
+  iconType,
+  icon,
+  iconImg,
+  disabled,
+  loading,
+  onClick,
+}) => {
+  if (type === "icon") {
+    return (
+      <div className="flex flex-col items-center justify-center gap-2">
+        <button
+          className={`flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out ${
+            iconType === "primary"
+              ? "bg-[#34CF84] hover:bg-[#3ceb96]"
+              : "bg-[#1F1F21] hover:bg-[#353537]"
+          }`}
+        >
+          {icon && (
+            <Icon
+              icon={icon}
+              className="w-6 h-6"
+              color={iconType === "primary" ? "black" : "white"}
+            />
+          )}
+          {iconImg && (
+            <img
+              src={`./assets/icons/${iconImg}.svg`}
+              alt="Icon"
+              className="w-6 h-6"
+            />
+          )}
+        </button>
+        {label && (
+          <span
+            className={`text-xs ${
+              iconType === "primary" ? "text-white" : "text-white/30"
+            }`}
+          >
+            {label}
+          </span>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <button
+      className={`flex flex-row py-3 px-7 items-center justify-center gap-2 transition-all duration-300 ease-in-out rounded-lg text-sm text-white font-semibold ${
+        type === "primary"
+          ? " bg-[#1F1F21] hover:bg-[#353537]"
+          : type === "default"
+          ? "bg-black hover:bg-[#1F1F21]"
+          : type === "secondary"
+          ? "bg-[#34CF84] hover:bg-[#3ceb96]"
+          : ""
+      }`}
+    >
+      {icon && <Icon icon={icon} className="w-8 h-8" color="#34CF84" />}
+      {label}
+    </button>
+  );
+};
+
+export default Button;

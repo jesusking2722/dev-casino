@@ -1,0 +1,27 @@
+<?php
+
+return array (
+  'new_permission' => '新しい権限「:name」を作成しました。',
+  'updated_permission' => '権限「:name」を更新しました。',
+  'deleted_permission' => '権限「:name」を削除しました。',
+  'new_role' => '新しい役割「:name」を作成しました。',
+  'updated_role' => '役割「:name」を更新しました。',
+  'deleted_role' => '役割「:name」を削除しました。',
+  'updated_role_permissions' => '役割の権限を更新しました。',
+  'logged_in' => 'ログインしました。',
+  'logged_out' => 'ログアウトしました。',
+  'created_account' => 'アカウントを作成しました。',
+  'updated_avatar' => 'プロフィールのアバターを更新しました。',
+  'updated_profile' => 'プロフィールの詳細を更新しました。',
+  'deleted_user' => 'ユーザー「:name」を削除しました。',
+  'banned_user' => 'ユーザー「:name」を禁止しました。',
+  'updated_profile_details_for' => 'ユーザー「:name」のプロフィール詳細を更新しました。',
+  'created_account_for' => 'ユーザー「:name」のアカウントを作成しました。',
+  'updated_settings' => 'ウェブサイトの設定を更新しました。',
+  'enabled_2fa' => '二要素認証を有効にしました。',
+  'disabled_2fa' => '二要素認証を無効にしました。',
+  'enabled_2fa_for' => 'ユーザー「:name」の二要素認証を有効にしました。',
+  'disabled_2fa_for' => 'ユーザー「:name」の二要素認証を無効にしました。',
+  'requested_password_reset' => 'パスワードリセットメールをリクエストしました。',
+  'reseted_password' => '「パスワードを忘れた」オプションでパスワードをリセットしました。',
+);

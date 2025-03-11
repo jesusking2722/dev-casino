@@ -1,0 +1,27 @@
+<?php
+
+return array (
+  'new_permission' => 'สร้างสิทธิ์ใหม่ชื่อ :name.',
+  'updated_permission' => 'อัปเดตสิทธิ์ชื่อ :name.',
+  'deleted_permission' => 'ลบสิทธิ์ชื่อ :name.',
+  'new_role' => 'สร้างบทบาทใหม่ชื่อ :name.',
+  'updated_role' => 'อัปเดตบทบาทชื่อ :name.',
+  'deleted_role' => 'ลบบทบาทชื่อ :name.',
+  'updated_role_permissions' => 'อัปเดตสิทธิ์บทบาท.',
+  'logged_in' => 'เข้าสู่ระบบ.',
+  'logged_out' => 'ออกจากระบบ.',
+  'created_account' => 'สร้างบัญชีผู้ใช้.',
+  'updated_avatar' => 'อัปเดตโปรไฟล์ภาพ.',
+  'updated_profile' => 'อัปเดตรายละเอียดโปรไฟล์.',
+  'deleted_user' => 'ลบผู้ใช้ :name.',
+  'banned_user' => 'ห้ามผู้ใช้ :name.',
+  'updated_profile_details_for' => 'อัปเดตข้อมูลโปรไฟล์สำหรับ :name.',
+  'created_account_for' => 'สร้างบัญชีให้กับผู้ใช้ :name.',
+  'updated_settings' => 'อัปเดตการตั้งค่าเว็บไซต์.',
+  'enabled_2fa' => 'เปิดใช้งานการยืนยันตัวตนสองขั้นตอน.',
+  'disabled_2fa' => 'ปิดการใช้งานการยืนยันตัวตนสองขั้นตอน.',
+  'enabled_2fa_for' => 'เปิดใช้งานการยืนยันตัวตนสองขั้นตอนสำหรับผู้ใช้ :name.',
+  'disabled_2fa_for' => 'ปิดการใช้งานการยืนยันตัวตนสองขั้นตอนสำหรับผู้ใช้ :name.',
+  'requested_password_reset' => 'ขอรีเซ็ตรหัสผ่านผ่านอีเมล.',
+  'reseted_password' => 'รีเซ็ตรหัสผ่านโดยใช้ตัวเลือก "ลืมรหัสผ่าน".',
+);

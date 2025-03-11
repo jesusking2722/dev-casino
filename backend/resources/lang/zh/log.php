@@ -1,0 +1,27 @@
+<?php
+
+return array (
+  'new_permission' => '创建了一个名为 :name 的新权限。',
+  'updated_permission' => '更新了名为 :name 的权限。',
+  'deleted_permission' => '删除了名为 :name 的权限。',
+  'new_role' => '创建了一个名为 :name 的新角色。',
+  'updated_role' => '更新了名称为 :name 的角色。',
+  'deleted_role' => '删除了名为 :name 的角色。',
+  'updated_role_permissions' => '更新了角色权限。',
+  'logged_in' => '已登录。',
+  'logged_out' => '已注销。',
+  'created_account' => '创建了一个帐户。',
+  'updated_avatar' => '更新了个人头像。',
+  'updated_profile' => '更新了个人资料。',
+  'deleted_user' => '删除了用户 :name。',
+  'banned_user' => '禁止了用户 :name。',
+  'updated_profile_details_for' => '更新了用户 :name 的个人资料。',
+  'created_account_for' => '为用户 :name 创建了一个帐户。',
+  'updated_settings' => '更新了网站设置。',
+  'enabled_2fa' => '启用了双因素认证。',
+  'disabled_2fa' => '禁用了双因素认证。',
+  'enabled_2fa_for' => '为用户 :name 启用了双因素认证。',
+  'disabled_2fa_for' => '为用户 :name 禁用了双因素认证。',
+  'requested_password_reset' => '请求了密码重置邮件。',
+  'reseted_password' => '使用“忘记密码”选项重置了密码。',
+);

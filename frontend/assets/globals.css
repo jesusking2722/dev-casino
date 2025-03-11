@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #171717;
+  --react-international-phone-background-color: #000000;
+  --react-international-phone-text-color: #ebebeb;
+  --react-international-phone-font-size: 14;
+  --react-international-phone-border-radius: 2;
+  --react-international-phone-border-color: #242424;
+  --react-international-phone-disabled-background-color: #000;
+  --react-international-phone-disabled-text-color: #ebebeb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.container {
+  place-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border {
+  border-color:#242424;
+  border-width: 1px;
+}
+
+@media (min-width: 0px) {
+  .container {
+    place-self: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    min-width: 760px;
+    max-width: 1200px;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: #000; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #222; /* Цвет бегунка */
+  border-radius: 16px; /* Округление бегунка */
+  border: 2px solid #222; /* Оформление границ бегунка */
+}
+
+*::-webkit-scrollbar {
+  width: 8px; /* Ширина всего элемента навигации */
+}
+
+*::-webkit-scrollbar-track {
+  background: #000; /* Цвет дорожки */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #222; /* Цвет бегунка */
+  border-radius: 16px; /* Округление бегунка */
+  border: 2px solid #222; /* Оформление границ бегунка */
+}

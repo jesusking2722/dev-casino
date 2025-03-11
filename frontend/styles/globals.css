@@ -1,0 +1,32 @@
+/* Add these styles to your globals.css */
+.react-international-phone-input {
+    @apply bg-[#1c1c1c] !important;
+}
+
+.react-international-phone-country-selector-button {
+    @apply bg-[#1c1c1c] border-[#2c2c2c] hover:bg-[#2c2c2c] h-[48px] !important;
+}
+
+.react-international-phone-country-selector-dropdown {
+    @apply bg-[#1c1c1c] border-[#2c2c2c] !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item {
+    @apply hover:bg-[#2c2c2c] text-[#ebebeb] !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--selected {
+    @apply bg-[#2c2c2c] !important;
+}
+
+.react-international-phone-input-container {
+    @apply border-[#2c2c2c] rounded-lg h-[48px] !important;
+}
+
+.react-international-phone-input:focus {
+    @apply border-[#e5b100] ring-1 ring-[#e5b100] !important;
+}
+
+.react-international-phone-country-selector-button__button-content {
+    @apply text-[#ebebeb] !important;
+} 

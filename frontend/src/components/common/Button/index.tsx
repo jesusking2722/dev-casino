@@ -2,11 +2,12 @@ import { FC } from "react";
 import { Icon } from "@iconify/react";
 
 interface ButtonProps {
-  type: "default" | "icon" | "primary" | "secondary";
+  type: "default" | "icon" | "primary" | "secondary" | "";
   label?: string;
   icon?: string;
-  iconType?: "primary";
+  iconType?: "primary" | "secondary";
   iconImg?: string;
+  iconPosition?: "left" | "right";
   disabled?: boolean;
   loading?: boolean;
   onClick?: () => void;
@@ -18,17 +19,27 @@ const Button: FC<ButtonProps> = ({
   iconType,
   icon,
   iconImg,
+  iconPosition,
   disabled,
   loading,
   onClick,
 }) => {
   if (type === "icon") {
+    if (iconType === "secondary" && icon) {
+      return (
+        <Icon
+          icon={icon}
+          className="hover:text-[#2fbb77] text-[#1F1F21] w-6 h-6 transition-all duration-300 ease-in-out"
+          onClick={onClick}
+        />
+      );
+    }
     return (
       <div className="flex flex-col items-center justify-center gap-2">
         <button
-          className={`flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out ${
+          className={`flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out shadow-md shadow-[#1F1F21] ${
             iconType === "primary"
-              ? "bg-[#34CF84] hover:bg-[#3ceb96]"
+              ? "bg-[#2fbb77] hover:bg-[#34CF84]"
               : "bg-[#1F1F21] hover:bg-[#353537]"
           }`}
         >
@@ -68,12 +79,24 @@ const Button: FC<ButtonProps> = ({
           : type === "default"
           ? "bg-black hover:bg-[#1F1F21]"
           : type === "secondary"
-          ? "bg-[#34CF84] hover:bg-[#3ceb96]"
+          ? "bg-[#2fbb77] hover:bg-[#34CF84]"
           : ""
       }`}
     >
-      {icon && <Icon icon={icon} className="w-8 h-8" color="#34CF84" />}
+      {iconImg && (
+        <img
+          src={`./assets/icons/${iconImg}.svg`}
+          alt="Icon"
+          className="w-6 h-6"
+        />
+      )}
+      {iconPosition === "left" && icon && (
+        <Icon icon={icon} className="w-8 h-8" color="#2fbb77" />
+      )}
       {label}
+      {iconPosition === "right" && icon && (
+        <Icon icon={icon} className="w-8 h-8" color="#2fbb77" />
+      )}
     </button>
   );
 };

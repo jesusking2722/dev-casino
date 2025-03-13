@@ -2,7 +2,7 @@ import Sidebar from "../Sidebar";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="w-full min-h-screen bg-black flex flex-row justify-between">
+    <div className="w-full min-h-screen bg-black flex flex-row justify-between overflow-x-hidden">
       <div>
         <Sidebar />
       </div>

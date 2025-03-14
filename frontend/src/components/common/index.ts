@@ -12,3 +12,6 @@ export { default as TournamentCard } from "./TournamentCard";
 export type { TournamentCardType } from "./TournamentCard";
 export { default as Dropdown } from "./Dropdown";
 export type { DropdownItemType } from "./Dropdown";
+export { PhoneMailSwitch } from "./switchs";
+export { default as InputField } from "./InputField";
+export { default as Checkbox } from "./Checkbox";

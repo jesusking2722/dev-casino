@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Icon } from "@iconify/react";
 
 interface ButtonProps {
-  type: "default" | "icon" | "primary" | "secondary" | "";
+  type: "default" | "icon" | "primary" | "secondary" | "link";
   label?: string;
   icon?: string;
   iconType?: "primary" | "secondary" | "indigo" | "blue";
@@ -46,6 +46,7 @@ const Button: FC<ButtonProps> = ({
               ? "bg-[#2AABEE] hover:bg-[#57C6FF]"
               : "bg-[#1F1F21] hover:bg-[#353537]"
           }`}
+          onClick={onClick}
         >
           {icon && (
             <Icon
@@ -86,6 +87,7 @@ const Button: FC<ButtonProps> = ({
           ? "bg-[#2fbb77] hover:bg-[#34CF84]"
           : ""
       }`}
+      onClick={onClick}
     >
       {iconImg && (
         <img

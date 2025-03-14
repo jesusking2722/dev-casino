@@ -7,6 +7,9 @@ export {
   Badge,
   TournamentCard,
   Dropdown,
+  PhoneMailSwitch,
+  InputField,
+  Checkbox,
 } from "./common";
 export type {
   GameCardType,

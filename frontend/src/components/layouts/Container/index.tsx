@@ -1,6 +1,13 @@
 import Sidebar from "../Sidebar";
+import { useLocation } from "react-router";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
+  const { pathname } = useLocation();
+
+  if (pathname.includes("register") || pathname.includes("login")) {
+    return <></>;
+  }
+
   return (
     <div className="w-full min-h-screen bg-black flex flex-row justify-center ">
       <div>

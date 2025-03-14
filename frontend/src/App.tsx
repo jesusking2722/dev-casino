@@ -2,18 +2,24 @@ import "./App.css";
 import { Container, Header, Footer } from "./components";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Home } from "./pages";
+import { Home, Login, Register } from "./pages";
 import { Routes, Route } from "react-router";
 
 function App() {
   return (
-    <Container>
-      <Header />
+    <>
       <Routes>
-        <Route path="/" Component={Home} />
+        <Route path="/register" Component={Register} />
+        <Route path="/login" Component={Login} />
       </Routes>
-      <Footer />
-    </Container>
+      <Container>
+        <Header />
+        <Routes>
+          <Route path="/" Component={Home} />
+        </Routes>
+        <Footer />
+      </Container>
+    </>
   );
 }
 

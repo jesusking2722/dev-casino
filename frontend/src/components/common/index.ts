@@ -15,3 +15,4 @@ export type { DropdownItemType } from "./Dropdown";
 export { PhoneMailSwitch } from "./switchs";
 export { default as InputField } from "./InputField";
 export { default as Checkbox } from "./Checkbox";
+export { default as LogoButton } from "./LogoButton";

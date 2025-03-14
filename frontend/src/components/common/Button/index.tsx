@@ -37,22 +37,28 @@ const Button: FC<ButtonProps> = ({
     return (
       <div className="flex flex-col items-center justify-center gap-2">
         <button
-          className={`flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out shadow-md shadow-[#1F1F21] ${
+          className={`group flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out shadow-md shadow-[#1F1F21] ${
             iconType === "primary"
               ? "bg-[#2fbb77] hover:bg-[#34CF84]"
               : iconType === "indigo"
               ? "bg-[#7D3DAF] hover:bg-[#B56AF1]"
               : iconType === "blue"
               ? "bg-[#2AABEE] hover:bg-[#57C6FF]"
-              : "bg-[#1F1F21] hover:bg-[#353537]"
+              : "bg-[#1F1F21] hover:bg-[#353537] focus:bg-[#103523] focus:backdrop-blur-sm"
           }`}
           onClick={onClick}
         >
           {icon && (
             <Icon
               icon={icon}
-              className="w-6 h-6"
-              color={iconType === "primary" ? "black" : "white"}
+              className={`w-6 h-6 ${
+                iconType === "primary" ? "text-black" : "text-white"
+              } ${
+                iconType !== "primary" &&
+                iconType !== "indigo" &&
+                iconType !== "blue" &&
+                "group-focus:text-[#2fbb77]"
+              }`}
             />
           )}
           {iconImg && (

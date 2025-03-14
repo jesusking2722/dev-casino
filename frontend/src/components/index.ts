@@ -10,6 +10,7 @@ export {
   PhoneMailSwitch,
   InputField,
   Checkbox,
+  LogoButton,
 } from "./common";
 export type {
   GameCardType,

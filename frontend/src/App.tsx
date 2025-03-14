@@ -2,7 +2,7 @@ import "./App.css";
 import { Container, Header, Footer } from "./components";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Home, Login, Register } from "./pages";
+import { Games, Home, Login, Register } from "./pages";
 import { Routes, Route } from "react-router";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" Component={Home} />
+          <Route path="/games" Component={Games} />
         </Routes>
         <Footer />
       </Container>

@@ -8,7 +8,7 @@ export interface GameCardType {
 
 const GameCard: FC<GameCardType> = ({ name, imgSource }) => {
   return (
-    <div className="relative w-[250px] h-[250px] rounded-lg cursor-pointer overflow-hidden group">
+    <div className="relative w-[200px] h-[200px] rounded-lg cursor-pointer overflow-hidden group">
       {/* Background Image */}
       <img
         src={imgSource}

@@ -21,7 +21,20 @@ const TopSlider: FC<TopSliderProps> = ({ slides }) => {
           iconPosition="right"
         />
       </div>
-      <div className="relative h-[250px]">
+      <div className="relative h-[200px]">
+        <Swiper
+          slidesPerView={6}
+          spaceBetween={100}
+          className="topSwiper grid grid-cols-6"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <GameCard name={slide.name} imgSource={slide.imgSource} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="relative h-[200px]">
         <Swiper
           slidesPerView={6}
           spaceBetween={100}

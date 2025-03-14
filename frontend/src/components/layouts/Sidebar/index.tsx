@@ -2,7 +2,7 @@ import { Button } from "../../common";
 
 const Sidebar = () => {
   return (
-    <div className="px-4 py-8 border-r border-[#1F1F21] flex flex-col gap-4 min-h-screen">
+    <div className="px-4 py-8 border-r border-[#1F1F21] flex flex-col gap-4 min-h-screen fixed left-0 top-0">
       <Button
         type="icon"
         icon="heroicons:bars-3-solid"

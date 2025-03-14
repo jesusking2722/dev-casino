@@ -12,7 +12,11 @@ const NoveltySlider: FC<NoveltySliderProps> = ({ slides }) => {
     <div className="w-full flex flex-col gap-6">
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-4">
-          <img src="./assets/icons/new.webp" alt="NEW" className="w-10 h-10" />
+          <img
+            src="./assets/icons/new.webp"
+            alt="NOVELTY"
+            className="w-10 h-10"
+          />
           <h1 className="font-semibold text-white text-xl">Novelty</h1>
         </div>
         <Button
@@ -22,7 +26,7 @@ const NoveltySlider: FC<NoveltySliderProps> = ({ slides }) => {
           iconPosition="right"
         />
       </div>
-      <div className="relative h-[250px]">
+      <div className="relative h-[200px]">
         <Swiper
           slidesPerView={6}
           spaceBetween={100}

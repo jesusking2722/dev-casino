@@ -15,6 +15,7 @@
     "flowbite-react": "^0.10.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router": "^7.3.0",
     "react-scripts": "5.0.1",
     "swiper": "^11.2.5",
     "tailwindcss": "3",

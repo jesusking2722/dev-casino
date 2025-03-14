@@ -5,7 +5,7 @@ interface ButtonProps {
   type: "default" | "icon" | "primary" | "secondary" | "";
   label?: string;
   icon?: string;
-  iconType?: "primary" | "secondary";
+  iconType?: "primary" | "secondary" | "indigo" | "blue";
   iconImg?: string;
   iconPosition?: "left" | "right";
   disabled?: boolean;
@@ -40,6 +40,10 @@ const Button: FC<ButtonProps> = ({
           className={`flex flex-col p-3 rounded-full items-center justify-center transition-all duration-300 ease-in-out shadow-md shadow-[#1F1F21] ${
             iconType === "primary"
               ? "bg-[#2fbb77] hover:bg-[#34CF84]"
+              : iconType === "indigo"
+              ? "bg-[#7D3DAF] hover:bg-[#B56AF1]"
+              : iconType === "blue"
+              ? "bg-[#2AABEE] hover:bg-[#57C6FF]"
               : "bg-[#1F1F21] hover:bg-[#353537]"
           }`}
         >
@@ -60,7 +64,7 @@ const Button: FC<ButtonProps> = ({
         </button>
         {label && (
           <span
-            className={`text-xs ${
+            className={`text-xs font-semibold ${
               iconType === "primary" ? "text-white" : "text-white/30"
             }`}
           >
@@ -87,7 +91,7 @@ const Button: FC<ButtonProps> = ({
         <img
           src={`./assets/icons/${iconImg}.svg`}
           alt="Icon"
-          className="w-6 h-6"
+          className="w-8 h-8"
         />
       )}
       {iconPosition === "left" && icon && (

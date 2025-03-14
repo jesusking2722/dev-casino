@@ -9,19 +9,3 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .mainSwiper .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color: #000;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-  }
-  
-  .mainSwiper .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
-  }

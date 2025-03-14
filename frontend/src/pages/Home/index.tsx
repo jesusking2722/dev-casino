@@ -1,5 +1,25 @@
-import { Button, MainSlider, TopSlider, NoveltySlider } from "../../components";
-import { INITIAL_MAIN_SLIDES, INITIAL_TOP_SLIDES } from "../../constant";
+import {
+  Button,
+  MainSlider,
+  TopSlider,
+  NoveltySlider,
+  JackpotSlider,
+  ProviderSlider,
+  LiveSlider,
+  TableSlider,
+  BonusSlider,
+  TournamentSlider,
+} from "../../components";
+import {
+  INITIAL_BONUS_SLIDES,
+  INITIAL_JACKPOT_SLIDES,
+  INITIAL_LIVE_SLIDES,
+  INITIAL_MAIN_SLIDES,
+  INITIAL_PROVIDER_SLIDES,
+  INITIAL_TABLE_SLIDES,
+  INITIAL_TOP_SLIDES,
+  INITIAL_TOURNAMENT_SLIDES,
+} from "../../constant";
 
 const Home = () => {
   return (
@@ -24,6 +44,18 @@ const Home = () => {
         <img src="./assets/logo.webp" alt="LOGO" className="w-24 h-auto" />
       </div>
       <NoveltySlider slides={INITIAL_TOP_SLIDES} />
+      <JackpotSlider slides={INITIAL_JACKPOT_SLIDES} />
+      <ProviderSlider slides={INITIAL_PROVIDER_SLIDES} />
+      <LiveSlider slides={INITIAL_LIVE_SLIDES} />
+      <TableSlider slides={INITIAL_TABLE_SLIDES} />
+      <BonusSlider slides={INITIAL_BONUS_SLIDES} />
+      <TournamentSlider slides={INITIAL_TOURNAMENT_SLIDES} />
+      <div className="w-full flex flex-col gap-4">
+        <h1 className="font-semibold text-white text-xl">
+          JadeJack licensed online casino in Russia
+        </h1>
+        <div className="w-full h-[400px] overflow-x-hidden overflow-y-scroll"></div>
+      </div>
     </div>
   );
 };
